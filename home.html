@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Habitable Planets</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <header>
+        <h1>Habitability Index</h1>
+    </header>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <main>
+        <form id="search">
+            <input type="text" id="planet">
+            <button id="enter">Enter</button>
+        </form>
+        <div class="whole">
+            <div class = "left-side"><div>Earth</div>
+                <div id="earthInfo1">Mass (Jupiters): <br> 0.00315</div>
+                <div id="earthInfo2">Radius (Jupiters): <br> 0.0892</div>
+                <div id="earthInfo3">Average Surface Temp(Kelvin): <br> 288</div>
+                <div id="earthInfo4">Orbital Period (Days): <br> 365.2</div>
+                <div id="earthInfo5">Distance from Earth (Light Years): <br> 0(We Here)</div>
+                <div id="earthInfo6">Semi Major Axis (AU): <br> 1</div>
+                <div id="earthInfo7">Host Star Temp(Kelvin): <br> 6000</div>
+                <div id="earthInfo8">Host Star Mass (Sun): <br> 1</div>
+                <div id="earthInfo9">Type of Planet: <br> Terrestrial</div>
+            </div>
+            
+            <div class = "right-side"><div id="name">Planet</div>
+                <div id="planetInfo1"></div>
+                <div id="planetInfo2"></div>
+                <div id="planetInfo3"></div>
+                <div id="planetInfo4"></div>
+                <div id="planetInfo5"></div>
+                <div id="planetInfo6"></div>
+                <div id="planetInfo7"></div>
+                <div id="planetInfo8"></div>
+                <div id="planetInfo9"></div>
+            </div>
+        </div>
+        <button id="refresh">Reset</button>
+
+    </main>    
+    <footer>
+        <div id="full-footer">
+            <div id="footer">Created by Jack Nordberg &nbsp&nbsp<div id="contact">
+            Contact: jacknordberg0@gmail.com</div></div>
+        </div>
+    </footer>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="./code.js" async defer></script>
+    </body>
+</html>

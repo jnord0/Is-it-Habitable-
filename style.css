@@ -1,0 +1,96 @@
+html{
+    overflow:scroll;
+    height: 100%;
+}
+h1{
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+body {
+    height: 100%;
+    overflow: auto;
+    background-image: url('./assets/spaceBg.jpeg');
+}
+.whole {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+  .left-side {
+    flex: 50%;
+    background-color: #f1f1f1;
+    background-image: url('./assets/earth.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    opacity: .9;
+}
+.right-side {
+    flex: 50%;
+    background-image: url('./assets/planet.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .9;
+  }
+#earthInfo1, #earthInfo2, #earthInfo3, #earthInfo4, #earthInfo5, #earthInfo6, #earthInfo7, #earthInfo8, #earthInfo9 {
+    border: #f1f1f1 .2px solid;
+    width: fit-content;
+    margin: 3px;
+    color: #f1f1f1;
+    margin-top: 20px;
+    text-align: center;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+#planetInfo1, #planetInfo2, #planetInfo3, #planetInfo4, #planetInfo5, #planetInfo6, #planetInfo7, #planetInfo8, #planetInfo9 {
+    border: #f1f1f1 0.2px solid;
+    width: fit-content;
+    margin: 5px;
+    color: #f1f1f1;
+    margin-top: 20px;
+    text-align: center;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#refresh{
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 4px;
+    margin-bottom: 6px;
+}
+#search{
+    display: flex;
+    justify-content: right;
+    margin: auto;
+    margin-bottom: 4px;
+}
+#enter{
+    background-color: black;
+    color: white;
+    margin-left: 4px;
+}
+#full-footer{
+    width: 50%;
+}
+#footer{
+    float: left;
+    color: white;
+}
+#contact{
+    float: right;
+    color: white;
+}
+#name {
+    color: white;
+}
+
+
+
+
