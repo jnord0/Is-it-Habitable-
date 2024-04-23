@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Habitable Planets</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <header class="flex">
+        <ul>
+        <li id="otherPage"> <a href="./home.html">Habitable Planet</a></li>
+        </ul>
+        <h1 id="homeTitle">Finding the Twin</h1>
+    </header>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <main>
+        <form autocomplete="off" id="search">
+            <input type="text" id="planet" onKeyUp="showResults(this.value)">
+            <button id="enter">Enter</button>
+            <div id="result"></div>
+        </form>
+        <div class="whole">
+            <div class = "left-side"><div id="earthName">Solar System</div>
+                <div id="solarInfo1"></div>
+                <div id="solarInfo2"></div>
+                <div id="solarInfo3"></div>
+                <div id="solarInfo4"></div>
+                <div id="solarInfo5"></div>
+                <div id="solarInfo6"></div>
+                <div id="solarInfo7"></div>
+                <div id="solarInfo8"></div>
+                <div id="solarInfo9"></div>
+            </div>
+            
+            <div class = "right-side"><div id="name">Planet</div>
+                <div id="planetInfo1"></div>
+                <div id="planetInfo2"></div>
+                <div id="planetInfo3"></div>
+                <div id="planetInfo4"></div>
+                <div id="planetInfo5"></div>
+                <div id="planetInfo6"></div>
+                <div id="planetInfo7"></div>
+                <div id="planetInfo8"></div>
+                <div id="planetInfo9"></div>
+            </div>
+        </div>
+        <button id="refresh">Reset</button>
+
+    </main>    
+    <footer>
+        <div id="full-footer">
+            <div id="footer">Created by Jack Nordberg &nbsp&nbsp<div id="contact">
+            Contact: jacknordberg0@gmail.com</div></div>
+        </div>
+    </footer>
+        <script>
+            function myFunction() {
+                 var x = document.getElementById("links");
+                if (x.style.display === "block") {
+                x.style.display = "none";
+                } else {
+                 x.style.display = "block";
+                }
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="./code2.js" async defer></script>
+        
+    </body>
+</html>
