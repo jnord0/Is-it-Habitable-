@@ -8,21 +8,26 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <header>
-        <h1>Habitability Index</h1>
+    <header class="flex">
+        <ul>
+        <li id="otherPage"> <a href="./twin.html">Twin Planet</a></li>
+        </ul>
+        <h1 id="homeTitle">Is it Habitable?</h1>
     </header>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <main>
-        <form id="search">
-            <input type="text" id="planet">
+        <form autocomplete="off" id="search">
+            <input type="text" id="planet" onKeyUp="showResults(this.value)">
             <button id="enter">Enter</button>
+            <div id="result"></div>
         </form>
         <div class="whole">
-            <div class = "left-side"><div>Earth</div>
+            <div class = "left-side"><div id = "earthName">Earth</div>
                 <div id="earthInfo1">Mass (Jupiters): <br> 0.00315</div>
                 <div id="earthInfo2">Radius (Jupiters): <br> 0.0892</div>
                 <div id="earthInfo3">Average Surface Temp(Kelvin): <br> 288</div>
@@ -32,6 +37,7 @@
                 <div id="earthInfo7">Host Star Temp(Kelvin): <br> 6000</div>
                 <div id="earthInfo8">Host Star Mass (Sun): <br> 1</div>
                 <div id="earthInfo9">Type of Planet: <br> Terrestrial</div>
+                <div id="earthInfo10">Is it Habitable: <br> Of Course</div>
             </div>
             
             <div class = "right-side"><div id="name">Planet</div>
@@ -44,6 +50,7 @@
                 <div id="planetInfo7"></div>
                 <div id="planetInfo8"></div>
                 <div id="planetInfo9"></div>
+                <div id="planetInfo10"></div>
             </div>
         </div>
         <button id="refresh">Reset</button>
@@ -55,7 +62,18 @@
             Contact: jacknordberg0@gmail.com</div></div>
         </div>
     </footer>
+        <script>
+            function myFunction() {
+                 var x = document.getElementById("links");
+                if (x.style.display === "block") {
+                x.style.display = "none";
+                } else {
+                 x.style.display = "block";
+                }
+            }
+        </script>
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script src="./code.js" async defer></script>
+        
     </body>
 </html>
