@@ -2,11 +2,6 @@ html{
     overflow:scroll;
     height: 100%;
 }
-h1{
-    text-align: center;
-    padding: 5px;
-    color: white;
-}
 body {
     height: 100%;
     overflow: auto;
@@ -33,7 +28,7 @@ body {
     background-size: cover;
     opacity: .9;
   }
-#earthInfo1, #earthInfo2, #earthInfo3, #earthInfo4, #earthInfo5, #earthInfo6, #earthInfo7, #earthInfo8, #earthInfo9 {
+#earthInfo1, #earthInfo2, #earthInfo3, #earthInfo4, #earthInfo5, #earthInfo6, #earthInfo7, #earthInfo8, #earthInfo9, #earthInfo10 {
     border: #f1f1f1 .2px solid;
     width: fit-content;
     margin: 3px;
@@ -44,7 +39,7 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     
 }
-#planetInfo1, #planetInfo2, #planetInfo3, #planetInfo4, #planetInfo5, #planetInfo6, #planetInfo7, #planetInfo8, #planetInfo9 {
+#planetInfo1, #planetInfo2, #planetInfo3, #planetInfo4, #planetInfo5, #planetInfo6, #planetInfo7, #planetInfo8, #planetInfo9, #planetInfo10 {
     border: #f1f1f1 0.2px solid;
     width: fit-content;
     margin: 5px;
@@ -53,6 +48,7 @@ body {
     text-align: center;
     background-color: black;
     background-color: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
 }
 #refresh{
     align-items: center;
@@ -69,7 +65,7 @@ body {
     display: flex;
     justify-content: right;
     margin: auto;
-    margin-bottom: 4px;
+    margin: 5px;
 }
 #enter{
     background-color: black;
@@ -89,8 +85,76 @@ body {
 }
 #name {
     color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+#earthName {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-
-
-
+ h1 {
+    color: white;
+    display: inline;
+    text-align: center;
+ }
+ h3 {
+    color: white;
+    display: inline;
+ }
+ #enter:hover{
+    background-color:aquamarine;
+    color: black;
+ }
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: fit-content;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color: #111;
+  }
+  li {
+    float: left;
+  }
+ #homeTitle {
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto;
+ }
+ .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+  }
+  #result {
+    padding: 3px;
+  }
+  #result ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+  }
+  #result ul li {
+    padding: 5px 5px;
+    background-color: white;
+    border: .5px solid black;
+  }
+  #result ul li:hover {
+    background: olivedrab;
+  }
